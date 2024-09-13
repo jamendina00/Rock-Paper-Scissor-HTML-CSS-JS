@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/doggoflowersgirl-pixel.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    
+    .rps {
+    border: 5px double black;
+    border-radius: 15px;
+    display: flex ;
+    justify-content: center;
+    }
+    .title {
+        position: absolute;
+        font-family: "Press Start 2P", cursive;
+        font-size: 60px;
+        font-weight: bolder;
+        margin: 40px;
+        justify-content: center;
+        background: linear-gradient(to right, #ff69b4, #33cc33, #66CCCC); /* Gradient background */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(255, 255, 255 0.5); 
+        animation: title 3s infinite;
+        
+    }
+    @keyframes title{
+      0%{
+        transform: translateX(0);
+      }
+      50%{
+        transform: translateX(10px);
+      }
+      100%{
+        transform: translateX(0);
+      }
+    }
+    .box {
+    font-size: 20px;
+    font-weight: bolder;
+    border: 10px;
+    border-style: outset;
+    border-color: black;
+    height: 435px;
+    width: 360px;
+    margin: 160px;
+    text-align: center;
+    }
+    #image2 {
+    transform: scaleX(-1);
+    }
+    img {
+    width: 220px;
+    height: 140px;
+    object-position: center;
+    background-color: transparent;
+    }
+    .name{
+        font-family: "Press Start 2P";
+        font-size: 40px;
+        position: relative;
+        margin: 50px;
+        background: linear-gradient(to right, #ff69b4, #33cc33, #66CCCC);
+        background-size: 200% 100%; /* added background-size property */
+        background-position: 0% 50%; /* added background-position property */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        animation: color-change 3s infinite; /* added animation */
+    }
+    @keyframes color-change {
+      0% {
+          background-position: 0% 50%;
+      }
+      100% {
+          background-position: 100% 50%;
+      }
+  }
+    .vs {
+        position: absolute;
+        translate: 0px 250px;
+        font-family: "Press Start 2P";
+        font-size: 100px;
+        font-weight: bold;
+        margin: 20px;
+        background: linear-gradient(to right, #ff69b4, #33cc33, #66CCCC);
+        background-size: 200% 100%; /* added background-size property */
+        background-position: 0% 50%; /* added background-position property */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: color-change 3s infinite; /* added animation */
+    }
+    #result{
+        font-family: "Press Start 2P";
+        text-align: center;
+        font-size: 20px;
+        margin: 90px;
+        background: linear-gradient(to right, #ff69b4, #33cc33, #66CCCC);
+        background-size: 200% 100%; /* added background-size property */
+        background-position: 0% 50%; /* added background-position property */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: color-change 3s infinite; /* added animation */
+    }
+    .score{
+        font-family: "Press Start 2P";
+        font-size: 60px;
+        margin: 40px;
+        background: linear-gradient(to right, #ff69b4, #33cc33, #66CCCC);
+        background-size: 200% 100%; /* added background-size property */
+        background-position: 0% 50%; /* added background-position property */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: color-change 3s infinite; /* added animation */
+    }
+    .result {
+        position: absolute;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 40px;
+        translate: 0px 350px;
+    }
+    #playbutton {
+        position: absolute;
+        translate: 0px 450px;
+        font-family: "Press Start 2P";
+        font-size: 40px;
+        height: 70px;
+        width: 250px;
+        margin: 80px;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 30px;
+
+    }
+    #playbutton:hover{
+      background: #730bec url('../img/pixel2.png');
+      transition-delay: 0.8s;
+      background-size: 180px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: playbutton 0.8s steps(8) forwards;
+    }
+    @keyframes playbutton{
+      0%{
+        background-position-y: 0;
+      }
+      100%{
+        background-position-y: 480px;
+      }
+    }
+    @media only screen and (max-width: 480px) and (max-height: 1040px) {
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      body {
+        background-image: url('/img/doggoflowersgirl-pixel.gif');
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: 480px 1040px;
+      }
+      
+      .rps {
+        border: none;
+        height: 1015px;
+        display: flex ;
+        justify-content: center;
+        gap: 5px;
+      }
+      .title {
+        position: absolute;
+        font-family: "Press Start 2P", cursive;
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 90px 0px;
+      }
+      .box {
+        height: 300px;
+        width: 200px;
+        border-width: 4px;
+        margin: 200px 20px;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        margin-top: 30PX;
+      }
+      .name{
+        font-family: "Press Start 2P";
+        font-size: 20px;
+        margin: 20px 0px;
+      }
+      .vs {
+        translate: 0px 330px;
+        font-size: 20px;
+      }
+      #result{
+        font-size: 18px;
+        margin: 190px 0px;
+      }
+      .score{
+        font-size: 35px;
+        margin: 55px 0px;
+      }
+      #playbutton {
+        translate: 0px 500px; 
+      }
+    }
+
+    /* @media only screen and (max-width: 834px) and (max-height: 1180px) {
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      .body {
+        background-image: url('/img/doggoflowersgirl-pixel.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 834px 1180px;
+      }
+
+      .rps{
+        height: 1115px;
+      }
+
+      .title{
+        font-size: 35px;
+        font-weight: bolder;
+        margin: 90px 0px;
+      }
+
+      .box{
+        height: 350px;
+        width: 300px;
+        border-width:10px;
+        margin: 300px 80px;
+
+      }
+      .name{
+        font-size: 40px;
+      }
+    } */
